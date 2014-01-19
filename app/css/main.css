@@ -88,9 +88,9 @@ body {
   width: 200px;
   height: 200px;
   margin: 85px auto;
-  background: url('../images/michael.jpg') no-repeat;
+  background: url('/images/michael.jpg') no-repeat;
   border-radius: 100%;
-  behavior: url(assets/stylesheet/lib/PIE.htc);
+  behavior: url(/css/lib/PIE.htc);
   -webkit-transform: scale(0.5, 0.5);
   -moz-transform: scale(0.5, 0.5);
   -o-transform: scale(0.5, 0.5);
