@@ -83,11 +83,11 @@ module.exports = function(grunt) {
         cleancss: false
       },
       files: {
-        expand: true,
+        expand: false,
         cwd: '<%= project.app %>css',
         src: 'main.less',
         dest: '<%= project.app %>css',
-        ext: '.css'
+        ext: 'main.css'
       }
     },
     autoprefixer: {
@@ -273,7 +273,7 @@ module.exports = function(grunt) {
         ],
         access_key: '<%= aws.AWSAccessKeyId %>',
         secret_key: '<%= aws.AWSSecretKey %>',
-        dist: 'ER3VRBATJZ831'
+        dist: 'E3CW7QLLH1WSP6'
       }
     },
     uglify: {
