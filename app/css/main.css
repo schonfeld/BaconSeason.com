@@ -4,9 +4,9 @@
 @import 'lib/swipebox.css';
 @import 'animations/circular/circular.css';
 @import 'animations/scaling/scaling.css';
-@import '../colors/cool/cool.css';
-@import '../colors/dark/dark.css';
-@import '../colors/flat/flat.css';
+@import 'colors/cool/cool.css';
+@import 'colors/dark/dark.css';
+@import 'colors/flat/flat.css';
 /**
  * Main Stylesheet
  */

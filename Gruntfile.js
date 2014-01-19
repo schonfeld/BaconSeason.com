@@ -84,10 +84,8 @@ module.exports = function(grunt) {
       },
       files: {
         expand: false,
-        cwd: '<%= project.app %>css',
-        src: 'main.less',
-        dest: '<%= project.app %>css',
-        ext: 'main.css'
+        src: '<%= project.app %>css/main.less',
+        dest: '<%= project.app %>css/main.css'
       }
     },
     autoprefixer: {
