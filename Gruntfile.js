@@ -285,7 +285,7 @@ module.exports = function(grunt) {
       }
     },
     cssmin: {
-      dist: {
+      generated: {
         options: {
           processImport: false,
           debug: true
