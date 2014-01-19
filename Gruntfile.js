@@ -149,28 +149,6 @@ module.exports = function(grunt) {
         accessKeyId: '<%= aws.AWSAccessKeyId %>',
         secretAccessKey: '<%= aws.AWSSecretKey %>'
       },
-      staging: {
-        options: {
-          differential: false,
-          bucket: 'staging.baconseason.com',
-          access: 'public-read',
-          uploadConcurrency: 5,
-          region: 'us-west-2' // Oregon
-        },
-        params: {
-          "CacheControl": "630720000",
-          "Expires": new Date(Date.now() + 63072000000).toUTCString(),
-          "ContentEncoding": "gzip"
-        },
-        files: [
-          {
-            expand: true,
-            cwd: '<%= project.dist %>',
-            src: [ '**' ],
-            action: 'upload'
-          }
-        ]
-      },
       prod: {
         options: {
           differential: false,
@@ -242,12 +220,6 @@ module.exports = function(grunt) {
       }
     },
     gitpush: {
-      staging: {
-        options: {
-          remote: 'github',
-          branch: 'staging',
-        }
-      },
       prod: {
         options: {
           remote: 'github',
@@ -320,18 +292,12 @@ module.exports = function(grunt) {
     'gitcommit'
   ]);
 
-  grunt.registerTask('deploy_staging', [
-    'aws_s3:staging',
-    'gitpush:staging'
-  ]);
-
-  grunt.registerTask('deploy_prod', [
+  grunt.registerTask('deploy', [
     'aws_s3:prod',
     'cloudfront_clear',
     'gitpush:prod'
   ]);
 
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('deploy-staging', ['deploy_staging']);
-  grunt.registerTask('deploy-prod', ['deploy_prod']);
+  grunt.registerTask('deploy', ['deploy']);
 };
