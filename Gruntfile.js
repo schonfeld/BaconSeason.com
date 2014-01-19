@@ -283,6 +283,11 @@ module.exports = function(grunt) {
           compress: true
         }
       }
+    },
+    processImport: {
+      options: {
+        processImport: false
+      }
     }
   });
 
