@@ -1,3 +1,3 @@
-$(document).on('Compass', function (e) {
+$(document).on('Bacon', function (e) {
 
 });

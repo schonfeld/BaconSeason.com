@@ -1,4 +1,4 @@
-var Compass = {
+var Bacon = {
     /**
      * Initilize the theme
      */
@@ -41,7 +41,7 @@ var Compass = {
 
             if (!error) {
                 $.event.trigger({
-                    type: 'Compass'
+                    type: 'Bacon'
                 });
 
                 clearInterval(ready);
@@ -131,5 +131,4 @@ var Compass = {
     }
 };
 
-// Initlize Compass
-Compass.init();
+Bacon.init();

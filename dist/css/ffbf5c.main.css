@@ -1,3 +1,13 @@
+/*
+   _____               .___                            _____                     __   
+  /     \    ____    __| _/  ____  _______   ____     /     \  _____     _______/  |_ 
+ /  \ /  \  /  _ \  / __ | _/ __ \ \_  __ \ /    \   /  \ /  \ \__  \   /  ___/\   __\
+/    Y    \(  <_> )/ /_/ | \  ___/  |  | \/|   |  \ /    Y    \ / __ \_ \___ \  |  |  
+\____|__  / \____/ \____ |  \___  > |__|   |___|  / \____|__  /(____  //____  > |__|  
+        \/              \/      \/              \/          \/      \/      \/        
+
+BaconSeason v1.0.36
+*/
 @import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700');
 @import url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 @import 'lib/reset.css';
@@ -47,8 +57,7 @@ body {
     margin: -230px 0 0 -175px;
     top: 0px;
     -webkit-transform: scale(0.75, 0.75);
-    -moz-transform: scale(0.75, 0.75);
-    -o-transform: scale(0.75, 0.75);
+    -ms-transform: scale(0.75, 0.75);
     transform: scale(0.75, 0.75);
   }
 }
@@ -57,45 +66,38 @@ body {
     margin: -230px 0 0 -175px;
     top: 0px;
     -webkit-transform: scale(0.75, 0.75);
-    -moz-transform: scale(0.75, 0.75);
-    -o-transform: scale(0.75, 0.75);
+    -ms-transform: scale(0.75, 0.75);
     transform: scale(0.75, 0.75);
   }
 }
 .main.animate .circle {
   -webkit-animation: avatar 1s forwards;
-  -moz-animation: avatar 1s forwards;
   animation: avatar 1s forwards;
   -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -moz-animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .main.animate .main_info {
   opacity: 1;
   padding-top: 30px;
   -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .main.hide {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   -webkit-transform: scale(0.2, 0.2);
-  -moz-transform: scale(0.2, 0.2);
-  -o-transform: scale(0.2, 0.2);
+  -ms-transform: scale(0.2, 0.2);
   transform: scale(0.2, 0.2);
 }
 .main .circle {
   width: 200px;
   height: 200px;
   margin: 85px auto;
-  background: url('/images/michael.jpg') no-repeat;
+  background: url('/images/79d82c.michael.jpg') no-repeat;
   border-radius: 100%;
   behavior: url(/css/lib/PIE.htc);
   -webkit-transform: scale(0.5, 0.5);
-  -moz-transform: scale(0.5, 0.5);
-  -o-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
   transform: scale(0.5, 0.5);
   /** Description overlay */
   /** Triggers */
@@ -121,8 +123,6 @@ body {
   margin-top: -29px;
   margin-left: -29px;
   -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   /** Trigger Items */
 }
@@ -131,8 +131,7 @@ body {
   position: absolute;
   text-align: center;
   -webkit-transform: rotate(0deg) translate(0, 0);
-  -moz-transform: rotate(0deg) translate(0, 0);
-  -o-transform: rotate(0deg) translate(0, 0);
+  -ms-transform: rotate(0deg) translate(0, 0);
   transform: rotate(0deg) translate(0, 0);
   /** Trigger Link **/
 }
@@ -146,12 +145,9 @@ body {
   border-radius: 100% 100% 100% 0;
   behavior: url(assets/stylesheet/lib/PIE.htc);
   -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-transform: rotate(-45deg) scale(0.9, 0.9);
-  -moz-transform: rotate(-45deg) scale(0.9, 0.9);
-  -o-transform: rotate(-45deg) scale(0.9, 0.9);
+  -ms-transform: rotate(-45deg) scale(0.9, 0.9);
   transform: rotate(-45deg) scale(0.9, 0.9);
   /** Trigger icon **/
 }
@@ -159,8 +155,7 @@ body {
   border-radius: 100%;
   behavior: url(assets/stylesheet/lib/PIE.htc);
   -webkit-transform: translate3d(0, 0, 0) rotate(-45deg) scale(1, 1);
-  -moz-transform: translate3d(0, 0, 0) rotate(-45deg) scale(1, 1);
-  -o-transform: translate3d(0, 0, 0) rotate(-45deg) scale(1, 1);
+  -ms-transform: translate3d(0, 0, 0) rotate(-45deg) scale(1, 1);
   transform: translate3d(0, 0, 0) rotate(-45deg) scale(1, 1);
 }
 .main .circle .triggers li.trigger-item a i {
@@ -169,8 +164,7 @@ body {
   width: 1.25em;
   text-align: center;
   -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
-  -moz-transform: translate3d(0, 0, 0) rotate(45deg);
-  -o-transform: translate3d(0, 0, 0) rotate(45deg);
+  -ms-transform: translate3d(0, 0, 0) rotate(45deg);
   transform: translate3d(0, 0, 0) rotate(45deg);
 }
 .main .main_info {
@@ -202,31 +196,11 @@ body {
   from {
     opacity: 0;
     -webkit-transform: scale(0.5, 0.5);
-    -moz-transform: scale(0.5, 0.5);
-    -o-transform: scale(0.5, 0.5);
     transform: scale(0.5, 0.5);
   }
   to {
     opacity: 1;
     -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-}
-@-moz-keyframes avatar {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0.5, 0.5);
-    -moz-transform: scale(0.5, 0.5);
-    -o-transform: scale(0.5, 0.5);
-    transform: scale(0.5, 0.5);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 }
@@ -234,15 +208,13 @@ body {
   from {
     opacity: 0;
     -webkit-transform: scale(0.5, 0.5);
-    -moz-transform: scale(0.5, 0.5);
-    -o-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
     transform: scale(0.5, 0.5);
   }
   to {
     opacity: 1;
     -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 }
