@@ -1,0 +1,27 @@
+.ease-in-out (@seconds: 0.2s) {
+    -webkit-transition: all @seconds ease-in-out;
+       -moz-transition: all @seconds ease-in-out;
+         -o-transition: all @seconds ease-in-out;
+            transition: all @seconds ease-in-out;
+}
+
+.cubic-bezier (@seconds: 0.2s)  {
+    -webkit-transition: all @seconds cubic-bezier(.68,-.55,.265,1.55);
+       -moz-transition: all @seconds cubic-bezier(.68,-.55,.265,1.55);
+         -o-transition: all @seconds cubic-bezier(.68,-.55,.265,1.55);
+            transition: all @seconds cubic-bezier(.68,-.55,.265,1.55);
+}
+
+.rotate (@degree: 0deg) {
+    -webkit-transform: translate3d(0, 0, 0) rotate(@degree);
+       -moz-transform: translate3d(0, 0, 0) rotate(@degree);
+         -o-transform: translate3d(0, 0, 0) rotate(@degree);
+            transform: translate3d(0, 0, 0) rotate(@degree);
+}
+
+.scale (@x, @y) {
+    -webkit-transform: scale(@x, @y);
+       -moz-transform: scale(@x, @y);
+         -o-transform: scale(@x, @y);
+            transform: scale(@x, @y);
+}

@@ -1,0 +1,80 @@
+body.dark-color {
+  background: #1a1e24;
+  color: #ccc;
+}
+body.dark-color #swipebox-slider .slide,
+body.dark-color .loader {
+  background: #1a1e24 url(loader.gif) no-repeat center;
+}
+body.dark-color .description {
+  background: #f64444;
+  background: rgba(246, 68, 68, 0.7);
+}
+body.dark-color .trigger-item a {
+  background: #00bbe4;
+  border: 6px solid #00bbe4;
+}
+body.dark-color .trigger-item a:hover {
+  background: #f64444;
+  border-color: #f64444;
+}
+body.dark-color #swipebox-close,
+body.dark-color #swipebox-prev,
+body.dark-color #swipebox-next,
+body.dark-color .close-page {
+  color: #f64444;
+}
+body.dark-color #swipebox-close:hover,
+body.dark-color #swipebox-prev:hover,
+body.dark-color #swipebox-next:hover,
+body.dark-color .close-page:hover {
+  color: #00bbe4;
+}
+body.dark-color .page {
+  background: #252733;
+}
+body.dark-color .page .content h1:before {
+  border-color: #00bbe4;
+}
+body.dark-color .page .content input,
+body.dark-color .page .content textarea {
+  border: 1px solid #ccc;
+}
+body.dark-color .page .content input:focus,
+body.dark-color .page .content textarea:focus {
+  border: 1px solid #00bbe4;
+}
+body.dark-color .page .content input.error,
+body.dark-color .page .content textarea.error {
+  border: 1px solid #f64444;
+}
+body.dark-color .page .content .error_message {
+  background: #f64444;
+  background: rgba(246, 68, 68, 0.6);
+  border: 1px solid #f64444;
+}
+body.dark-color .page .content .btn {
+  background: #f64444;
+  color: white;
+  cursor: pointer;
+  border: 0;
+}
+body.dark-color .page .content .btn:hover {
+  background: #00bbe4;
+}
+body.dark-color #swipebox-overlay {
+  background: #1a1e24;
+}
+body.dark-color #swipebox-action,
+body.dark-color #swipebox-caption {
+  background: #252733;
+}
+body.dark-color .resume h2 {
+  color: #00bbe4;
+}
+body.dark-color .resume .progress {
+  background: #16191e;
+}
+body.dark-color .resume .progress span {
+  background: #f64444;
+}

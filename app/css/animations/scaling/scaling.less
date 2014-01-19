@@ -1,0 +1,64 @@
+/**
+ * Scaling Animation
+ */
+
+@import '../../lib/mixins';
+
+body.scaling-animation {
+    .main {
+        &.animate {
+            .triggers {
+                opacity: 0;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            }
+        }
+
+        .triggers {
+            -webkit-animation-timing-function: cubic-bezier(.68,-.55,.265,1.55);
+               -moz-animation-timing-function: cubic-bezier(.68,-.55,.265,1.55);
+                    animation-timing-function: cubic-bezier(.68,-.55,.265,1.55);
+
+            -webkit-animation: scaling .5s forwards;
+               -moz-animation: scaling .5s forwards;
+                    animation: scaling .5s forwards;
+
+            -webkit-animation-delay: 1s;
+               -moz-animation-delay: 1s;
+                    animation-delay: 1s;
+        }
+    }
+}
+
+// Keyframes
+@-webkit-keyframes scaling {
+    from {
+        opacity: 0;
+        .scale(.5,.5);
+    }
+    to {
+        opacity: 1;
+        .scale(1, 1);
+    }
+}
+
+@-moz-keyframes scaling {
+    from {
+        opacity: 0;
+        .scale(.5,.5);
+    }
+    to {
+        opacity: 1;
+        .scale(1, 1);
+    }
+}
+
+@keyframes scaling {
+    from {
+        opacity: 0;
+        .scale(.5,.5);
+    }
+    to {
+        opacity: 1;
+        .scale(1, 1);
+    }
+}

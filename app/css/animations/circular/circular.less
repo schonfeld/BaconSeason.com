@@ -1,0 +1,62 @@
+/**
+ * Circular Animation
+ */
+body.circular-animation {
+    .main {
+        &.animate {
+            .triggers li {
+                -webkit-animation-timing-function: cubic-bezier(.68,-.55,.265,1.55);
+                   -moz-animation-timing-function: cubic-bezier(.68,-.55,.265,1.55);
+                        animation-timing-function: cubic-bezier(.68,-.55,.265,1.55);
+
+                -webkit-animation: circular .5s forwards;
+                   -moz-animation: circular .5s forwards;
+                        animation: circular .5s forwards;
+            }
+        }
+
+        .triggers li {
+            opacity: 0;
+        }
+    }
+}
+
+// Keyframe
+@-webkit-keyframes circular {
+    from {
+        opacity: 0;
+        -webkit-transform: translate(0, 0);
+           -moz-transform: translate(0, 0);
+             -o-transform: translate(0, 0);
+                transform: translate(0, 0);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes circular {
+    from {
+        opacity: 0;
+        -webkit-transform: translate(0, 0);
+           -moz-transform: translate(0, 0);
+             -o-transform: translate(0, 0);
+                transform: translate(0, 0);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes circular {
+    from {
+        opacity: 0;
+        -webkit-transform: translate(0, 0);
+           -moz-transform: translate(0, 0);
+             -o-transform: translate(0, 0);
+                transform: translate(0, 0);
+    }
+    to {
+        opacity: 1;
+    }
+}

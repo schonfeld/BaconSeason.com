@@ -1,0 +1,86 @@
+/**
+ * Cool Color Set
+ */
+body.cool-color {
+  background: #363f48;
+  color: #363f48;
+}
+body.cool-color #swipebox-slider .slide,
+body.cool-color .loader {
+  background: #363f48 url(loader.gif) no-repeat center;
+}
+body.cool-color .description {
+  background: #62adc7;
+  background: rgba(98, 173, 199, 0.7);
+}
+body.cool-color .trigger-item a {
+  background: #7cc576;
+  border: 6px solid #7cc576;
+}
+body.cool-color .trigger-item a:hover {
+  background: #62adc7;
+  border-color: #62adc7;
+}
+body.cool-color .main_info {
+  color: #eff2f4;
+}
+body.cool-color #swipebox-close,
+body.cool-color #swipebox-prev,
+body.cool-color #swipebox-next,
+body.cool-color .close-page {
+  color: #62adc7;
+}
+body.cool-color #swipebox-close:hover,
+body.cool-color #swipebox-prev:hover,
+body.cool-color #swipebox-next:hover,
+body.cool-color .close-page:hover {
+  color: #7cc576;
+}
+body.cool-color .page {
+  background: #eff2f4;
+}
+body.cool-color .page .content h1:before {
+  border-color: #7cc576;
+}
+body.cool-color .page .content input,
+body.cool-color .page .content textarea {
+  border: 1px solid #ccc;
+}
+body.cool-color .page .content input:focus,
+body.cool-color .page .content textarea:focus {
+  border: 1px solid #7cc576;
+}
+body.cool-color .page .content input.error,
+body.cool-color .page .content textarea.error {
+  border: 1px solid #ee6557;
+}
+body.cool-color .page .content .error_message {
+  background: #f64444;
+  background: rgba(246, 68, 68, 0.6);
+  border: 1px solid #f64444;
+}
+body.cool-color .page .content .btn {
+  background: #62adc7;
+  color: white;
+  cursor: pointer;
+  border: 0;
+}
+body.cool-color .page .content .btn:hover {
+  background: #7cc576;
+}
+body.cool-color #swipebox-overlay {
+  background: #363f48;
+}
+body.cool-color #swipebox-action,
+body.cool-color #swipebox-caption {
+  background: #eff2f4;
+}
+body.cool-color .resume h2 {
+  color: #7cc576;
+}
+body.cool-color .resume .progress {
+  background: #a7abb1;
+}
+body.cool-color .resume .progress span {
+  background: #62adc7;
+}
