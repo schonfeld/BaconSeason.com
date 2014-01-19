@@ -74,7 +74,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: './<%= project.app %>',
           dest: '<%= project.dist %>',
-          src: [ '**', '!**/*.less', '!**/*.css', '!**/*.js' ]
+          src: [ '**', '!**/*.less', '!**/*.js' ]
         }]
       }
     },

@@ -1,0 +1,80 @@
+body.flat-color {
+  color: #333;
+  background: whitesmoke;
+}
+body.flat-color #swipebox-slider .slide,
+body.flat-color .loader {
+  background: #f5f5f5 url(loader.gif) no-repeat center;
+}
+body.flat-color .description {
+  background: #16a6b6;
+  background: rgba(22, 166, 182, 0.7);
+}
+body.flat-color .trigger-item a {
+  background: #ee6557;
+  border: 6px solid #ee6557;
+}
+body.flat-color .trigger-item a:hover {
+  background: #16a6b6;
+  border-color: #16a6b6;
+}
+body.flat-color #swipebox-close,
+body.flat-color #swipebox-prev,
+body.flat-color #swipebox-next,
+body.flat-color .close-page {
+  color: #ee6557;
+}
+body.flat-color #swipebox-close:hover,
+body.flat-color #swipebox-prev:hover,
+body.flat-color #swipebox-next:hover,
+body.flat-color .close-page:hover {
+  color: #16a6b6;
+}
+body.flat-color .page {
+  background: white;
+}
+body.flat-color .page .content h1:before {
+  border-color: #16a6b6;
+}
+body.flat-color .page .content input,
+body.flat-color .page .content textarea {
+  border: 1px solid #ccc;
+}
+body.flat-color .page .content input:focus,
+body.flat-color .page .content textarea:focus {
+  border: 1px solid #16a6b6;
+}
+body.flat-color .page .content input.error,
+body.flat-color .page .content textarea.error {
+  border: 1px solid #ee6557;
+}
+body.flat-color .page .content .btn {
+  background: #ee6557;
+  color: white;
+  cursor: pointer;
+  border: 0;
+}
+body.flat-color .page .content .btn:hover {
+  background: #16a6b6;
+}
+body.flat-color .page .content .error_message {
+  background: #ee6557;
+  background: rgba(238, 101, 87, 0.6);
+  border: 1px solid #ee6557;
+}
+body.flat-color #swipebox-overlay {
+  background: whitesmoke;
+}
+body.flat-color #swipebox-action,
+body.flat-color #swipebox-caption {
+  background: white;
+}
+body.flat-color .resume h2 {
+  color: #16a6b6;
+}
+body.flat-color .resume .progress {
+  background: #eee;
+}
+body.flat-color .resume .progress span {
+  background: #ee6557;
+}

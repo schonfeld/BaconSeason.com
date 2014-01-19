@@ -1,0 +1,218 @@
+/*
+   _____               .___                            _____                     __   
+  /     \    ____    __| _/  ____  _______   ____     /     \  _____     _______/  |_ 
+ /  \ /  \  /  _ \  / __ | _/ __ \ \_  __ \ /    \   /  \ /  \ \__  \   /  ___/\   __\
+/    Y    \(  <_> )/ /_/ | \  ___/  |  | \/|   |  \ /    Y    \ / __ \_ \___ \  |  |  
+\____|__  / \____/ \____ |  \___  > |__|   |___|  / \____|__  /(____  //____  > |__|  
+        \/              \/      \/              \/          \/      \/      \/        
+
+BaconSeason v1.0.32
+*/
+@import 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700';
+@import 'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css';
+@import 'lib/reset.css';
+@import 'animations/circular/circular.css';
+@import 'colors/dark/dark.css';
+/**
+ * Main Stylesheet
+ */
+/** Fonts **/
+/** Basic required libraries **/
+/** Animations **/
+/** Colors **/
+body {
+  font: normal 400 14px/1.7 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+/** Loader */
+.loader {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.loader.show {
+  display: block;
+}
+/** Main window */
+.main {
+  width: 350px;
+  height: 470px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -230px 0 0 -175px;
+  /** Animate avatar */
+  /** Avatar Circle */
+  /** Main Info */
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .main {
+    margin: -230px 0 0 -175px;
+    top: 0px;
+    -webkit-transform: scale(0.75, 0.75);
+    -ms-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75);
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+  .main {
+    margin: -230px 0 0 -175px;
+    top: 0px;
+    -webkit-transform: scale(0.75, 0.75);
+    -ms-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75);
+  }
+}
+.main.animate .circle {
+  -webkit-animation: avatar 1s forwards;
+  animation: avatar 1s forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.main.animate .main_info {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.main.hide {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transform: scale(0.2, 0.2);
+  -ms-transform: scale(0.2, 0.2);
+  transform: scale(0.2, 0.2);
+}
+.main .circle {
+  width: 200px;
+  height: 200px;
+  margin: 85px auto;
+  background: url('/images/79d82c.michael.jpg') no-repeat;
+  border-radius: 100%;
+  behavior: url(/css/lib/PIE.htc);
+  -webkit-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  /** Description overlay */
+  /** Triggers */
+}
+.main .circle .description {
+  line-height: 200px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 100;
+  font-size: 2em;
+  color: white;
+  display: none;
+  border-radius: 100%;
+  behavior: url(assets/stylesheet/lib/PIE.htc);
+}
+.main .circle .triggers {
+  display: block;
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -29px;
+  margin-left: -29px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /** Trigger Items */
+}
+.main .circle .triggers li.trigger-item {
+  display: block;
+  position: absolute;
+  text-align: center;
+  -webkit-transform: rotate(0deg) translate(0, 0);
+  -ms-transform: rotate(0deg) translate(0, 0);
+  transform: rotate(0deg) translate(0, 0);
+  /** Trigger Link **/
+}
+.main .circle .triggers li.trigger-item a {
+  width: 46.2px;
+  height: 46.2px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 17.6px;
+  border-radius: 100% 100% 100% 0;
+  behavior: url(assets/stylesheet/lib/PIE.htc);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: rotate(-45deg) scale(0.9, 0.9);
+  -ms-transform: rotate(-45deg) scale(0.9, 0.9);
+  transform: rotate(-45deg) scale(0.9, 0.9);
+  /** Trigger icon **/
+}
+.main .circle .triggers li.trigger-item a:hover {
+  border-radius: 100%;
+  behavior: url(assets/stylesheet/lib/PIE.htc);
+  -webkit-transform: translate3d(0, 0, 0) rotate(-45deg) scale(1, 1);
+  -ms-transform: translate3d(0, 0, 0) rotate(-45deg) scale(1, 1);
+  transform: translate3d(0, 0, 0) rotate(-45deg) scale(1, 1);
+}
+.main .circle .triggers li.trigger-item a i {
+  padding: 14px 12px;
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+  -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+  -ms-transform: translate3d(0, 0, 0) rotate(45deg);
+  transform: translate3d(0, 0, 0) rotate(45deg);
+}
+.main .main_info {
+  text-align: center;
+  padding-top: 70px;
+  opacity: 0;
+  /** Site headline **/
+}
+.main .main_info h1 {
+  font-size: 2em;
+  font-weight: 400;
+}
+/** IE STYLES */
+.ie .resume .progress {
+  background: none !important;
+}
+.ie .page .content .error_message {
+  display: block;
+  visibility: hidden;
+}
+.ie .main .circle .triggers li.trigger-item a {
+  border-radius: 100%;
+  behavior: url(assets/stylesheet/lib/PIE.htc);
+}
+/**
+ * Avatar Animnation Keyframe
+ */
+@-webkit-keyframes avatar {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes avatar {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
