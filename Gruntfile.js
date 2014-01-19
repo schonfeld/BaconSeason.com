@@ -110,7 +110,7 @@ module.exports = function(grunt) {
         '<%= project.dist %>*.html'
       ],
       css: [
-        '<%= project.dist %>css/*.css'
+        '<%= project.dist %>css/main.css'
       ],
       options: {
         assetsDirs: [
