@@ -1,0 +1,93 @@
+// Flat Theme
+body.flat-color {
+    color: #333;
+    background: whitesmoke;
+
+    #swipebox-slider .slide, .loader {
+        background: whitesmoke url(loader.gif) no-repeat center;
+    }
+
+    .description {
+        background: rgb(22, 166, 182);
+        background: rgba(22, 166, 182, .7);
+    }
+
+    .trigger-item a {
+        background: #ee6557;
+        border: 6px solid #ee6557;
+
+        &:hover {
+            background: #16a6b6;
+            border-color: #16a6b6;
+        }
+    }
+
+    #swipebox-close, #swipebox-prev, #swipebox-next, .close-page {
+        color: #ee6557;
+
+        &:hover {
+            color: #16a6b6;
+        }
+    }
+
+    .page {
+        background: white;
+
+        .content { 
+            h1:before {
+                border-color: #16a6b6;
+            }
+
+            input, textarea {
+                border: 1px solid #ccc;
+
+                &:focus {
+                    border: 1px solid #16a6b6;
+                }
+
+                &.error {
+                    border: 1px solid #ee6557;
+                }
+            }
+
+            .btn {
+                background: #ee6557;
+                color: white;
+                cursor: pointer;
+                border: 0;
+
+                &:hover {
+                    background: #16a6b6;
+                }
+            }
+
+            .error_message {
+                background: rgb(238, 101, 87);
+                background: rgba(238, 101, 87, .6);
+                border: 1px solid #ee6557;
+            }
+        }
+    }
+
+    #swipebox-overlay {
+        background: whitesmoke;
+    }
+
+    #swipebox-action, #swipebox-caption {
+        background: white;
+    }
+
+    .resume {
+        h2 {
+            color: #16a6b6;
+        }
+
+        .progress {
+            background: #eee;
+
+            span {
+                background: #ee6557;
+            }   
+        }
+    }
+}

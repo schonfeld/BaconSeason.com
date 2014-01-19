@@ -1,7 +1,7 @@
 {
   "name": "BaconSeason",
   "private": true,
-  "version": "1.0.5",
+  "version": "1.0.6",
   "engines": {
     "node": "0.10.12",
     "npm": "1.2.30"
