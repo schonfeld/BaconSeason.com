@@ -284,9 +284,11 @@ module.exports = function(grunt) {
         }
       }
     },
-    processImport: {
-      options: {
-        processImport: false
+    cssmin: {
+      processImport: {
+        options: {
+          processImport: false
+        }
       }
     }
   });
