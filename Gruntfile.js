@@ -80,7 +80,7 @@ module.exports = function(grunt) {
     },
     less: {
       options: {
-        cleancss: false
+        cleancss: true
       },
       files: {
         expand: false,
